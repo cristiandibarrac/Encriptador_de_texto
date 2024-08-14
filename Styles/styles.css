@@ -1,0 +1,64 @@
+.root{
+    --color--primario: #F3F5FC;
+    --color--secundario: #0A3871;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+
+.logo {
+
+    width: 120px;
+    height: 48px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+input {
+    padding: 5px;
+    color: var(--color--secundario);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 120px;
+    width: 577px;
+    height: 48px;
+    font-size: 32px;
+    border: none;
+}
+
+.contenedor {
+    margin-left: 240px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contenedor__alerta {
+    display: flex;
+    margin-top: 683px;
+}
+
+.contenedor__alerta__imagen {
+    width: 16px;
+    height: 16px;
+}
+
+.contenedor__botones {
+    gap: 24px;
+    display: flex;
+    margin-top: 4px;
+}
+
+.contenedor__salida {
+    width: 400px;
+    height: 944px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 150px;
+}

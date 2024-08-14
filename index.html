@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/styles.css">
+</head>
+<body>
+    <main>
+        <img class="logo" src="assets/Logo@2x.png" alt="logo de Alura">
+        <div class="contenedor">
+            <section class="contenedor__entrada">
+                <input class='texto__entrada' type='text' id='textInput' placeholder='Ingresa el texto aquí'>
+                <p class="contenedor__alerta">
+                <img class="contenedor__alerta__imagen" src="assets/warning.png" alt="Logo de alerta" id="warning">
+                Solo letras minúsculas y sin acentos
+                </p>
+                <div class="contenedor__botones">
+                    <button onclick="captureText()">Encriptar</button>
+                    <button onclick="captureText()">Desencriptar</button>
+                </div>
+            </section>
+            
+            <div class="contenedor__salida">
+                <img src='assets/Muñeco.png' alt='Imagen de referencia' id='Muñeco'>
+                <div class="texto__traducido" id="outputText">Ingresa el texto que deseas encriptar o desencriptar</div>
+            </div>
+        </div>
+        
+    </main>
+    <script src="app.js" defer></script>
+</body>
+<footer>
+    <p>Desarrollado por Cristian Ibarra</p>
+</footer>
+</html>
