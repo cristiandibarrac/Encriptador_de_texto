@@ -1,15 +1,35 @@
 function encriptar() {
-    var texto = document.getElementById('textInput').value;
+    let texto = document.getElementById('textInput').value;
 
-    if(texto.includes("e")) texto.replace(/e/g, "enter");
-    if(texto.includes("i")) texto.replace(/e/g, "imes");
-    if(texto.includes("a")) texto.replace(/e/g, "ai");
-    if(texto.includes("o")) texto.replace(/e/g, "ober");
-    if(texto.includes("u")) texto.replace(/e/g, "ufat");
+    if(texto.includes('e')) texto = texto.replace(/e/g, 'enter');
+    if(texto.includes('i')) texto = texto.replace(/i/g, 'imes');
+    if(texto.includes('a')) texto = texto.replace(/a/g, 'ai');
+    if(texto.includes('o')) texto = texto.replace(/o/g, 'ober');
+    if(texto.includes('u')) texto = texto.replace(/u/g, 'ufat');
 
-    document.getElementById('Muñeco').style.display = 'none';
-    document.getElementById('Mensaje').style.display = 'none';
-    document.getElementById('Salida').textContent = texto;
+    if(texto!=''){
+        document.getElementById('Muñeco').style.display = 'none';
+        document.getElementById('Mensaje').style.display = 'none';
+        document.getElementById('Salida').textContent = texto;
+    }
+
+    console.log(texto);
+}
+
+function desencriptar() {
+    let texto = document.getElementById('textInput').value;
+
+    texto = texto.replace(/enter/g, 'e');
+    texto = texto.replace(/imes/g, 'i');
+    texto = texto.replace(/ai/g, 'a');
+    texto = texto.replace(/ober/g, 'o');
+    texto = texto.replace(/ufat/g, 'u');
+
+    if(texto!=''){
+        document.getElementById('Muñeco').style.display = 'none';
+        document.getElementById('Mensaje').style.display = 'none';
+        document.getElementById('Salida').textContent = texto;
+    }
 
     console.log(texto);
 }
