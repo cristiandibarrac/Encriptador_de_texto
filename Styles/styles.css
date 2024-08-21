@@ -32,7 +32,7 @@ input {
     margin-top: 120px;
     width: 577px;
     height: 48px;
-    font-size: 32px;
+    font-size: 2rem;
     border: none;
 }
 
@@ -52,7 +52,7 @@ input::placeholder {
     margin-top: 683px;
     gap: 5px;
     color: var(--color--gris);
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .contenedor__alerta__imagen {
@@ -73,7 +73,7 @@ button {
 
 .contenedor__botones__boton {
     border-radius: 24px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 #btn1 {
@@ -102,9 +102,13 @@ button {
     gap: 16px;
     border-radius: 32px;
     padding: 32px;
-    font-size: 32px;
+    font-size: 2rem;
     color: var(--color--secundario);
     font-family: 'Inter', sans-serif;
+}
+
+.contenedor__salida__imagen {
+    display: block;
 }
 
 .texto__traducido {
@@ -113,12 +117,12 @@ button {
 
 .texto__traducido__titulo {
     text-align: center;
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 .texto__traducido__parrafo {
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 footer {
@@ -129,7 +133,68 @@ footer {
     padding: 5px;
     background-color: var(--color--secundario);
     color: var(--color--primario);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     width: 100%;
+}
+
+@media (max-width: 1200px){
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+    }
+
+    .contenedor__entrada {
+        margin-left: 40px;
+    }
+
+    .contenedor__salida {
+        justify-content: center;
+        width: auto;
+        height: 132px;
+        margin-left: 40px;
+    }
+
+    .contenedor__salida__imagen {
+        display: none;
+    }
+
+    .texto__traducido {
+        padding: 32px;    
+    }
+
+    footer {
+        width: 100%;
+    }
+}
+
+@media (max-width: 720px){
+    
+    main {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .contenedor__entrada {
+        margin-left: 16px;
+        justify-content: center;
+    }
+
+    .contenedor__botones {
+        flex-direction: column;
+        margin-left: 0%;
+    }
+
+    .contenedor__salida {
+        width: 328px;
+        height: 186px;
+        margin-left: 16px;
+    }
+
+    footer {
+        width: 100%;
+    }
 }
